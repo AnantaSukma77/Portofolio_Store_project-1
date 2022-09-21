@@ -1,0 +1,11 @@
+.box-cart {
+  display: flex;
+}
+
+.left-cart img {
+  width: 100px;
+  height: 100px;
+}
+.right-cart input {
+  width: 20px;
+}

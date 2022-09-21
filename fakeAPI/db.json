@@ -1,0 +1,184 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Kaos Hitam Distro",
+      "stock": 10,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "price": 35000,
+      "image": "https://cf.shopee.co.id/file/854f8d29440f7c424440deb85d2e8598"
+    },
+    {
+      "id": 2,
+      "name": "Kaos Lengan Panjang",
+      "stock": 5,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "price": 60000,
+      "image": "https://s1.bukalapak.com/img/66309576592/s-330-330/data.jpeg.webp"
+    },
+    {
+      "id": 3,
+      "name": "Hoodie Pink Bear",
+      "stock": 15,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "price": 95000,
+      "image": "https://dj7u9rvtp3yka.cloudfront.net/products/PIM-1592640845582-745a8651-ee65-4d55-8d37-ee0cd7985270_v1-small.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Zipper Jacket",
+      "stock": 10,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "price": 129000,
+      "image": "https://cf.shopee.co.id/file/c9b41afa79fcb3b15571880019233a2d"
+    },
+    {
+      "id": 5,
+      "name": "Sepatu Vans Hitam",
+      "stock": 10,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "price": 230000,
+      "image": "https://images.tokopedia.net/img/cache/700/product-1/2019/5/14/581905/581905_c16b954c-f8f0-4179-94af-f788d8d0b8d7_1080_1080.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Nie Run Blue",
+      "stock": 10,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "price": 735000,
+      "image": "https://cf.shopee.co.id/file/208e6bffa4d2e35a03211b14499d3137"
+    },
+    {
+      "id": 7,
+      "name": "Backpack Tommy Hilfiger",
+      "stock": 10,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "price": 457000,
+      "image": "https://cf.shopee.co.id/file/4833025e5bd355a2bdd1e4ce3ac1a4bd"
+    },
+    {
+      "id": 8,
+      "name": "Set Jersey Hitam",
+      "stock": 10,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "price": 150000,
+      "image": "https://cf.shopee.co.id/file/5e2ab943e2bab7a0dc8cb30cbb70682c"
+    },
+    {
+      "id": 9,
+      "name": "Kaos Arema",
+      "stock": 19,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "price": 110000,
+      "image": "https://cf.shopee.co.id/file/5e2ab943e2bab7a0dc8cb30cbb70682c"
+    },
+    {
+      "name": "Kaos Persebaya",
+      "stock": 19,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "price": 110000,
+      "image": "https://cf.shopee.co.id/file/5e2ab943e2bab7a0dc8cb30cbb70682c",
+      "id": 10
+    },
+    {
+      "name": "Kaos Viking",
+      "stock": 19,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "price": 110000,
+      "image": "https://cf.shopee.co.id/file/5e2ab943e2bab7a0dc8cb30cbb70682c",
+      "id": 11
+    },
+    {
+      "name": "Kaos The Jak",
+      "stock": 19,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "price": 125000,
+      "image": "https://cf.shopee.co.id/file/5e2ab943e2bab7a0dc8cb30cbb70682c",
+      "id": 12
+    },
+    {
+      "name": "Hoodie Ultras",
+      "stock": 12,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "price": 300000,
+      "image": "https://cf.shopee.co.id/file/5e2ab943e2bab7a0dc8cb30cbb70682c",
+      "id": 13
+    },
+    {
+      "name": "Hoodie Ultras Garuda",
+      "stock": 12,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "price": 712000,
+      "image": "https://cf.shopee.co.id/file/5e2ab943e2bab7a0dc8cb30cbb70682c",
+      "id": 14
+    },
+    {
+      "name": "Hoodie Curva",
+      "stock": 22,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "price": 572000,
+      "image": "https://cf.shopee.co.id/file/5e2ab943e2bab7a0dc8cb30cbb70682c",
+      "id": 15
+    },
+    {
+      "name": "Boomber",
+      "stock": 21,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "price": 337000,
+      "image": "https://cf.shopee.co.id/file/5e2ab943e2bab7a0dc8cb30cbb70682c",
+      "id": 16
+    },
+    {
+      "name": "Baju Koko",
+      "stock": 11,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "price": 57000,
+      "image": "https://cf.shopee.co.id/file/5e2ab943e2bab7a0dc8cb30cbb70682c",
+      "id": 17
+    },
+    {
+      "name": "Jubah Akatsuki",
+      "stock": 17,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "price": 230000,
+      "image": "https://cf.shopee.co.id/file/5e2ab943e2bab7a0dc8cb30cbb70682c",
+      "id": 18
+    },
+    {
+      "name": "Jubah Yondaime",
+      "stock": 17,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "price": 136000,
+      "image": "https://cf.shopee.co.id/file/5e2ab943e2bab7a0dc8cb30cbb70682c",
+      "id": 19
+    },
+    {
+      "name": "Jubah Uciha",
+      "stock": 17,
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "price": 115000,
+      "image": "https://cf.shopee.co.id/file/5e2ab943e2bab7a0dc8cb30cbb70682c",
+      "id": 20
+    }
+  ],
+  "users": [
+    {
+      "email": "abed@gmail.com",
+      "password": "admin123"
+    },
+    {
+      "email": "jono@gmail.com",
+      "password": "admin123"
+    },
+    {
+      "email": "ananta@gmail.com",
+      "password": "ananta77"
+    }
+  ],
+  "carts": [
+    {
+      "productId": 1,
+      "amount": 2
+    }
+  ]
+}
