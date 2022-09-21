@@ -9,7 +9,6 @@ async function login({ email, password }) {
     return email === user.email && password === user.password;
   });
   if (isUserExist) {
-    alert('login sukses');
     window.localStorage.setItem('email', email);
     return true;
   } else {
