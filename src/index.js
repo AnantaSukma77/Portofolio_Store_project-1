@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 // import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 // import Cart from './newpages/Cart';
 // import LandingPage from './newpages/LandingPage';
 // import Login from './newpages/Login';
@@ -11,7 +12,11 @@ import reportWebVitals from './reportWebVitals';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <Router>
+      <Routes>
+        <App />
+      </Routes>
+    </Router>
   </React.StrictMode>
 );
 
