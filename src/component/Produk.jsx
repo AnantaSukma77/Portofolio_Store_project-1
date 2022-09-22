@@ -1,6 +1,17 @@
+import { useState } from 'react';
 import './css/produk.css';
 
 export default function Produk() {
+  const [product, setProduct] = useState([]);
+  fetch('http://localhost:3004/products')
+    .then((response) => {
+      return response.json();
+    })
+    .then((data) => {
+      console.log(data);
+      console.log(data.name);
+    });
+
   return (
     <div className="container-product">
       <div className="box-product">
