@@ -1,10 +1,8 @@
 import { useEffect } from 'react';
 import { useState } from 'react';
 import './css/produk.css';
-
-// function fetchingData() {
-
-// }
+import { useDispatch, useSelector } from 'react-redux';
+import { addProductToCart } from '../redux/action';
 
 export default function Produk() {
   const [products, setProducts] = useState([]);
@@ -22,8 +20,24 @@ export default function Produk() {
 
   useEffect(() => {
     fetchingData();
+    console.log(productInCart);
   }, []);
 
+  const productInCart = useSelector((state) => {
+    return state.cart;
+  });
+  console.log(productInCart);
+  const dispatch = useDispatch();
+  const onAddToCart = (id) => {
+    const selectedProduct = findProduct(id);
+    console.log([...productInCart, ...selectedProduct]);
+    dispatch(addProductToCart([...productInCart, ...selectedProduct]));
+  };
+  const findProduct = (id) => {
+    return products.filter((product) => {
+      return product.id === id;
+    });
+  };
   return (
     <div>
       <button onClick={fetchingData}>Get</button>
@@ -35,7 +49,14 @@ export default function Produk() {
             <p>Stok : {product.stock}</p>
             <div className="price-btn">
               <h4>{product.price}</h4>
-              <button>Cart</button>
+
+              <button
+                onClick={() => {
+                  onAddToCart(product.id);
+                }}
+              >
+                Cart
+              </button>
             </div>
           </div>
         ))}
@@ -59,33 +80,6 @@ export default function Produk() {
     //     <button>Cart</button>
     //   </div>
     // </div>
-    //   <div className="box-product">
-    //     <img src="https://static.republika.co.id/uploads/images/inpicture_slide/arema-fc-meluncurkan-logo-dan-slogan-baru-jiwa-jawara_220721090619-387.jpg" alt="Produk" />
-    //     <h4>Judul Baju</h4>
-    //     <p>Stok</p>
-    //     <div className="price-btn">
-    //       <h4>Harga</h4>
-    //       <button>Cart</button>
-    //     </div>
-    //   </div>
-    //   <div className="box-product">
-    //     <img src="https://static.republika.co.id/uploads/images/inpicture_slide/arema-fc-meluncurkan-logo-dan-slogan-baru-jiwa-jawara_220721090619-387.jpg" alt="Produk" />
-    //     <h4>Judul Baju</h4>
-    //     <p>Stok</p>
-    //     <div className="price-btn">
-    //       <h4>Harga</h4>
-    //       <button>Cart</button>
-    //     </div>
-    //   </div>
-    //   <div className="box-product">
-    //     <img src="https://static.republika.co.id/uploads/images/inpicture_slide/arema-fc-meluncurkan-logo-dan-slogan-baru-jiwa-jawara_220721090619-387.jpg" alt="Produk" />
-    //     <h4>Judul Baju</h4>
-    //     <p>Stok</p>
-    //     <div className="price-btn">
-    //       <h4>Harga</h4>
-    //       <button>Cart</button>
-    //     </div>
-    //   </div>
     // </div>
   );
 }
