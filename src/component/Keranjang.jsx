@@ -13,15 +13,14 @@ export default function Keranjang() {
     setCount(count - 1);
   };
 
-  // const total = () => { productInCart.map((product)=> {return (
-  //   product.price * count
-  // ) )}}
   return (
     <>
-      <div>
+      <div className="induk">
+        <h2>Keranjang</h2>
+      </div>
+      {productInCart.map((product) => (
         <div>
-          <h2>Keranjang</h2>
-          {productInCart.map((product) => (
+          <div>
             <div className="box-cart">
               <>
                 <div className="left-cart">
@@ -39,9 +38,7 @@ export default function Keranjang() {
                 </div>
               </>
             </div>
-          ))}
-        </div>
-        {productInCart.map((product) => {
+          </div>
           <div className="box">
             <div className="left">
               <h3>Total</h3>
@@ -55,9 +52,9 @@ export default function Keranjang() {
               <h3>{(product.price * count * 10) / 100}</h3>
               <h2>{product.price * count + (product.price * count * 10) / 100 + 3000}</h2>
             </div>
-          </div>;
-        })}
-      </div>
+          </div>
+        </div>
+      ))}
     </>
   );
 }

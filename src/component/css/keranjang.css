@@ -9,3 +9,16 @@
 .right-cart input {
   width: 20px;
 }
+
+.box {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  display: flex;
+}
+.left {
+  margin-right: 20px;
+}
+
+.induk {
+  margin-bottom: 15px;
+}

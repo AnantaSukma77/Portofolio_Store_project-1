@@ -7,3 +7,11 @@ navbar {
   justify-content: space-between;
   align-items: center;
 }
+
+.nav-right {
+  width: 20%;
+}
+
+navbar .nav-right button {
+  margin: 0 20px;
+}

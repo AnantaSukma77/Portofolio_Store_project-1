@@ -43,7 +43,7 @@ export default function Produk() {
 
   return (
     <div>
-      <button onClick={fetchingData}>Get</button>
+      {/* <button onClick={fetchingData}>Get</button> */}
       <div className="container-product">
         {products.map((product) => (
           <div className="box-product">
@@ -58,7 +58,7 @@ export default function Produk() {
                   onAddToCart(product.id);
                 }}
               >
-                Cart
+                Add to Cart
               </button>
             </div>
           </div>

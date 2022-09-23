@@ -5,7 +5,7 @@ export default function Navbar() {
   return (
     <navbar>
       <h1>Nanta Store</h1>
-      <div>
+      <div className="nav-right">
         <Link to="/cart">
           <button>Cart</button>
         </Link>
