@@ -7,7 +7,7 @@ export default function Cart() {
     <div>
       <Navbar />
       <Keranjang />
-      <Total />
+      {/* <Total /> */}
     </div>
   );
 }

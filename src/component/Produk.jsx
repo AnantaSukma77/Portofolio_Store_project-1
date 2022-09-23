@@ -18,26 +18,29 @@ export default function Produk() {
       });
   };
 
+  const productInCart = useSelector((state) => state.cart);
+
   useEffect(() => {
     fetchingData();
     console.log(productInCart);
   }, []);
 
-  const productInCart = useSelector((state) => {
-    return state.cart;
-  });
   console.log(productInCart);
+
   const dispatch = useDispatch();
+
   const onAddToCart = (id) => {
     const selectedProduct = findProduct(id);
     console.log([...productInCart, ...selectedProduct]);
     dispatch(addProductToCart([...productInCart, ...selectedProduct]));
   };
+
   const findProduct = (id) => {
     return products.filter((product) => {
       return product.id === id;
     });
   };
+
   return (
     <div>
       <button onClick={fetchingData}>Get</button>
