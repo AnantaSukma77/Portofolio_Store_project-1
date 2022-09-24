@@ -1,16 +1,14 @@
 import './css/keranjang.css';
 import { useSelector } from 'react-redux';
 import { useState } from 'react';
+import ItemKeranjang from './ItemKeranjang';
 
 export default function Keranjang() {
   const productInCart = useSelector((state) => state.cart);
 
-  const [count, setCount] = useState(0);
-  const increment = () => {
-    setCount(count + 1);
-  };
-  const decrement = () => {
-    setCount(count - 1);
+  const [price, setPrice] = useState(0);
+  const addPrice = (harga) => {
+    setPrice(price + harga);
   };
 
   return (
@@ -20,7 +18,8 @@ export default function Keranjang() {
       </div>
       {productInCart.map((product) => (
         <div>
-          <div>
+          <ItemKeranjang addPriceCallback={addPrice} price={product.price} name={product.name} stock={product.stock} image={product.image} description={product.description} />
+          {/* <div>
             <div className="box-cart">
               <>
                 <div className="left-cart">
@@ -38,23 +37,23 @@ export default function Keranjang() {
                 </div>
               </>
             </div>
-          </div>
-          <div className="box">
-            <div className="left">
-              <h3>Total</h3>
-              <h3>Ongkos Kirim</h3>
-              <h3>Pajak 10%</h3>
-              <h2>Total Pembayaran</h2>
-            </div>
-            <div className="right">
-              <h3>{product.price * count}</h3>
-              <h3>3000</h3>
-              <h3>{(product.price * count * 10) / 100}</h3>
-              <h2>{product.price * count + (product.price * count * 10) / 100 + 3000}</h2>
-            </div>
-          </div>
+          </div> */}
         </div>
       ))}
+      <div className="box">
+        <div className="left">
+          <h3>Total</h3>
+          <h3>Ongkos Kirim</h3>
+          <h3>Pajak 10%</h3>
+          <h2>Total Pembayaran</h2>
+        </div>
+        <div className="right">
+          <h3>{price}</h3>
+          <h3>3000</h3>
+          <h3>{(price * 10) / 100}</h3>
+          <h2>{price + (price * 10) / 100 + 3000}</h2>
+        </div>
+      </div>
     </>
   );
 }
