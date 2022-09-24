@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react';
+import './css/itemKeranjang.css';
 
 export default function ItemKeranjang(props) {
   const [count, setCount] = useState(0);
@@ -28,7 +29,7 @@ export default function ItemKeranjang(props) {
           <div className="center-cart">
             <h3>{props.name}</h3>
             <p>Stok: {props.stock}</p>
-            <p>Harga :{props.price}</p>
+            <p>Harga : Rp. {props.price}</p>
             <p>{props.description}</p>
           </div>
           <div className="right-cart">

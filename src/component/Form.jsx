@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './css/form.css';
 
 export default function Form({ login }) {
   const [email, setEmail] = useState('');
@@ -19,17 +20,19 @@ export default function Form({ login }) {
   return (
     <form>
       <h1>Login dulu</h1>
-      <div>
+      <div className="email">
         <label>Email</label>
         <input type="email" value={email} onChange={onEmailChange} />
       </div>
-      <div>
+      <div className="password">
         <label>Password</label>
         <input type="password" value={password} onChange={onPasswordChange} />
       </div>
-      <button type="submit" onClick={onClictBtn}>
-        Login
-      </button>
+      <div className="btn">
+        <button type="submit" onClick={onClictBtn}>
+          Login
+        </button>
+      </div>
     </form>
   );
 }

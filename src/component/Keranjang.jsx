@@ -42,16 +42,16 @@ export default function Keranjang() {
       ))}
       <div className="box">
         <div className="left">
-          <h3>Total</h3>
-          <h3>Ongkos Kirim</h3>
-          <h3>Pajak 10%</h3>
+          <h4>Total</h4>
+          <h4>Ongkos Kirim</h4>
+          <h4>Pajak 10%</h4> <br />
           <h2>Total Pembayaran</h2>
         </div>
         <div className="right">
-          <h3>{price}</h3>
-          <h3>3000</h3>
-          <h3>{(price * 10) / 100}</h3>
-          <h2>{price + (price * 10) / 100 + 3000}</h2>
+          <h4>Rp. {price}</h4>
+          <h4>Rp. 3000</h4>
+          <h4>Rp. {(price * 10) / 100}</h4> <br />
+          <h2>Rp. {price + (price * 10) / 100 + 3000}</h2>
         </div>
       </div>
     </>

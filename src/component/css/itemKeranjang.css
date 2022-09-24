@@ -1,0 +1,18 @@
+.box-cart {
+  display: flex;
+  margin: 30px;
+
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.left-cart img {
+  width: 100px;
+  height: 100px;
+}
+
+.center-cart {
+}
+.right-cart input {
+  width: 20px;
+}

@@ -51,7 +51,7 @@ export default function Produk() {
             <h4>{product.name}</h4>
             <p>Stok : {product.stock}</p>
             <div className="price-btn">
-              <h4>{product.price}</h4>
+              <h4>Rp. {product.price}</h4>
 
               <button
                 onClick={() => {
