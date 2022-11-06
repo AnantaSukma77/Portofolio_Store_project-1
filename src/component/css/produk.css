@@ -9,8 +9,24 @@
 }
 .box-product img {
   width: 170px;
+  height: 200px;
 }
 .price-btn {
   display: flex;
   justify-content: space-between;
+}
+
+.price-btn button {
+  transition: 0.5s;
+  border-radius: 8px;
+  border-style: none;
+  height: 40px;
+  width: 50px;
+  background-color: rgb(161, 197, 197);
+}
+
+.price-btn button:hover {
+  background-color: #f1753b;
+  transition: 0.5s;
+  cursor: pointer;
 }

@@ -6,7 +6,7 @@ export default function Headers() {
     <header>
       <h1>Produk</h1>
       <div>
-        <input type="search" />
+        <input type="search" placeholder="Cari.." />
         <Link to="/notfound">
           <button>Search</button>
         </Link>

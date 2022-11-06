@@ -1,5 +1,5 @@
 form {
-  width: 30%;
+  width: 25%;
   height: 250px;
   left: 0;
   right: 0;
@@ -9,7 +9,7 @@ form {
   flex-direction: column;
   text-align: center;
   padding-top: 20px;
-  background-color: rgb(236, 196, 143);
+  background-color: #ff5000;
   border-radius: 9px;
 }
 
@@ -29,6 +29,7 @@ form {
   left: 0;
   right: 0;
   margin: auto;
+  border-radius: 5px;
 }
 
 .password {
@@ -48,11 +49,20 @@ form {
   left: 0;
   right: 0;
   margin: auto;
+  border-radius: 5px;
 }
 
 .btn {
   text-align: center;
 }
 .btn button {
-  width: 50px;
+  width: 70px;
+  height: 30px;
+  border-radius: 3px;
+  transition: 0.5s;
+}
+.btn button:hover {
+  background-color: #f2255e;
+  transition: 0.5s;
+  color: white;
 }

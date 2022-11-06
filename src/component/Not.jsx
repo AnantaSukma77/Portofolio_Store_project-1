@@ -1,7 +1,9 @@
+import './css/comming.css';
+
 export default function Not() {
   return (
-    <div>
-      <img src="https://assets.kompasiana.com/items/album/2021/08/14/images-6117992706310e0d285e54d2.jpeg?t=t&v=260" alt="404 Not Found" />
+    <div className="commingsoon">
+      <img src="https://img.freepik.com/free-vector/abstract-coming-soon-halftone-style-background-design_1017-27282.jpg?w=2000" alt="404 Not Found" />
     </div>
   );
 }

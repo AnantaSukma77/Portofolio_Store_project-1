@@ -19,7 +19,7 @@ export default function Form({ login }) {
 
   return (
     <form>
-      <h1>Login dulu</h1>
+      <h1>Silahkan Login</h1>
       <div className="email">
         <label>Email</label>
         <input type="email" value={email} onChange={onEmailChange} />
